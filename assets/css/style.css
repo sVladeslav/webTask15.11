@@ -1,2 +1,69 @@
 @import url(./reset.css);
 
+body{
+    background-image: url("https://st4.depositphotos.com/1993283/21566/i/1600/depositphotos_215662408-stock-photo-beach-waves-top-view-turquoise.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+
+.mainForm{
+    width: 800px;
+    box-shadow: 0px 0px 6px 5px rgba(0,0,0,0.75);
+    top: 20%;
+    position: absolute;
+    padding: 40px 40px;
+}
+
+.mainForm > h1{
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.mainForm > p{
+    margin: 30px 0;
+}
+
+.rowForm{
+    display: flex;
+    /*justify-content: space-between;*/
+    align-items: center;
+}
+
+.rowForm + .rowForm{
+    margin-top: 10px;
+}
+
+input, select{
+    height: 25px;
+    box-sizing:border-box;
+}
+input + input{
+    margin-left: 20px;
+}
+
+.nameRow{
+    flex-basis: 150px;
+}
+
+.grow1{
+    flex-grow: 1;
+}
+
+textarea{
+    height: 100px;
+}
+
+.submitForm{
+    text-transform: uppercase;
+    border: 2px solid white;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
