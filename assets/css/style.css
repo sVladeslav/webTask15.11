@@ -1,1 +1,117 @@
 @import url(./reset.css);
+
+body{
+    background-color: #009688;
+}
+
+.card{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    height: 270px;
+}
+
+.cardBody{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    width: 600px;
+    height: 200px;
+    background-color: white;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 10px 10px -4px rgba(0,0,0,0.43);
+
+}
+
+.rotateBlock{
+    transform: rotate(65deg);
+    width: 450px;
+    height: 250px;
+    background-color: #5E9EA0;
+    position: relative;
+    left: -200px;
+    top: 70px;
+}
+
+.circleFoto{
+    display: inline-block;
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 30px;
+}
+
+.circleFoto > img {
+    width: 300px;
+    position: relative;
+    left: -20px;
+    top: -20px;
+}
+
+.infoBlock{
+    display: inline-block;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    max-width: 60%;
+}
+
+.infoBlock > .userName{
+    font-size: 40px;
+    font-weight: normal;
+    text-space: 3px;
+}
+
+.infoBlock > .userPosition{
+    color: #86CBC5;
+    font-size: 20px;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-style: italic;
+}
+
+.infoBlock > .aboutUser{
+    margin-top: 10px;
+    font-size: 22px;
+    font-weight: 400;
+    color: rgba(0,0,0,0.5);
+}
+
+.linkBlock{
+    position: absolute;
+    background-color: #E7E8E8;
+    width: 560px;
+    height: 80px;
+    top: 78%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-bottom: 7px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+    z-index: -1;
+    border-radius: 10px;
+    box-shadow: 0px 10px 10px -4px rgba(0,0,0,0.43);
+}
+
+.linkItem{
+    color: #B5B6B6;
+}
+
+.linkItem > img{
+    height: 40px;
+}
+
+.linkItem.center > img{
+    height: 45px;
+}
+.linkItem + .linkItem{
+    margin-left: 15px;
+}
